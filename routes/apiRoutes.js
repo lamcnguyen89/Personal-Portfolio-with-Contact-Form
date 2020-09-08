@@ -1,4 +1,5 @@
 // Source: https://tylerkrys.ca/blog/adding-nodemailer-email-contact-form-node-express-app
+// Source for explaining express responses: https://expressjs.com/en/api.html#res.render
 
 //=============================================
 // DEPENDENCIES
@@ -42,10 +43,10 @@ module.exports = function(app) {
         // Attempt to send the email
         smtpTrans.sendMail(mailOpts, (error, response) => {
             if (error) {
-                res.render('contact-failure') // Show a page indicating failure
+                res.redirect('/contact') 
             }
             else {
-                res.render('contact-success') // Show a page indicating success
+                res.redirect('/contact') 
             }
         });
 
