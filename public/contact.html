@@ -52,30 +52,35 @@
             <article class="col-sm-12">
                 <form action="/contact" id="contact-form" method="post" role="form">
                     <article class="form-group">
-                      <label for="nameArea">Name</label>
+                      <label for="name">Name</label>
                       <input 
                         type="text" 
                         class="form-control" 
-                        id="name" 
+                        id="name"
+                        name="name"
+                        required="required" 
                         placeholder="First Name and Last Name"
                       >
                     </article>
                     <article class="form-group">
-                      <label for="emailArea">Email</label>
+                      <label for="email">Email</label>
                       <input 
                         type="text" 
                         class="form-control" 
-                        id="email" 
+                        id="email"
+                        name="email"
+                        required="required" 
                         placeholder="Example@gmail.com"
                       >
                     </article>
                     <article class="form-group">
-                      <label for="messageArea">Message</label>
+                      <label for="message">Message</label>
                       <textarea 
                         class="form-control" 
-                        id="message" 
+                        id="message"
+                        name="message" 
                         rows="5" 
-                        placeholder="Enter your message here."
+                        placeholder=""
                       >
                       </textarea>
                     </article>
