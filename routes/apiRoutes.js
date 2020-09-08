@@ -5,6 +5,7 @@
 // include the path module to allow the JS file to move to the correct path to the specified file
 //=============================================
 const path = require("path");
+const nodemailer = require('nodemailer');
 require("dotenv").config();
 
 const GMAIL_USER = process.env.GMAIL_USER
@@ -34,7 +35,7 @@ module.exports = function(app) {
         const mailOpts = {
             from: 'Your sender info here', // This is ignored by Gmail
             to: GMAIL_USER,
-            subject: 'New message from contact form at tylerkrys.ca',
+            subject: 'Message from my Personal Portfolio',
             text: `${req.body.name} (${req.body.email}) says: ${req.body.message}`
         }
 

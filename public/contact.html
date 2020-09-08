@@ -50,30 +50,30 @@
 
         <article class= "row justify-content-center">
             <article class="col-sm-12">
-                <form onsubmit="return false">
+                <form action="/contact" id="contact-form" method="post" role="form">
                     <article class="form-group">
-                      <label for="formGroupExampleInput">Name</label>
+                      <label for="nameArea">Name</label>
                       <input 
                         type="text" 
                         class="form-control" 
-                        id="formGroupExampleInput" 
+                        id="name" 
                         placeholder="First Name and Last Name"
                       >
                     </article>
                     <article class="form-group">
-                      <label for="formGroupExampleInput2">Email</label>
+                      <label for="emailArea">Email</label>
                       <input 
                         type="text" 
                         class="form-control" 
-                        id="formGroupExampleInput2" 
+                        id="email" 
                         placeholder="Example@gmail.com"
                       >
                     </article>
                     <article class="form-group">
-                      <label for="exampleFormControlTextarea1">Message</label>
+                      <label for="messageArea">Message</label>
                       <textarea 
                         class="form-control" 
-                        id="exampleFormControlTextarea1" 
+                        id="message" 
                         rows="5" 
                         placeholder="Enter your message here."
                       >

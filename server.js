@@ -3,7 +3,6 @@
 //=============================================
 
 const express = require("express")
-const nodemailer = require('nodemailer');
 
 //=============================================
 // CREATE AND CONFIGURE SERVER
