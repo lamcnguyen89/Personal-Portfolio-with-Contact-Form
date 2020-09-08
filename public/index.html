@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lam Nguyen Portfolio- Home Page</title>
+
+    <!--CSS Bootstrap Reference-->
+    <link 
+        rel="stylesheet" 
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous"
+    >
+    <!--Local CSS Reference-->
+    <link
+        rel="stylesheet"
+        type="text/css"
+        href="assets/styles/styles.css"
+    >
+</head>
+
+<body>
+    
+     <!--Navigation Bar for webpage taken off Bootstrap. -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container headingformats">
+            <a class="navbar-brand" href="/">Lam Nguyen</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-item nav-link" href="/">About <span class="sr-only">(current)</span></a>
+                  <a class="nav-item nav-link" href="/portfolio">Portfolio</a>
+                  <a class="nav-item nav-link" href="/contact">Contact</a>
+                </div>
+              </div>
+        </div>
+    </nav>
+
+    <!--Main body that contains a bio of the person named Lam Nguyen-->
+    <main class="container p-2 my-4">
+    <!-- "my-4" is a bootstrap notation that controls the top and bottom margins for  the container."p-2" is a bootstrap notation that controls the padding for the container. Information can be found in the Bootstrap documentation under the Spacing section.
+     -->
+        <h1 class="headingformats">About Me</h1>
+        <hr>
+        
+        <article class="row">
+            <article class="col-12 mt-3 p-3">
+            <!--"mt-3" is a bootstrap notation that controls the top margin of the container. Information is found in the Bootstrap documentation under the Spacing section.-->
+                <article>
+                    <img 
+                        src="assets/images/Lam_Profile.jpg" 
+                        alt="Profile image of man named Lam Nguyen" 
+                        class="aboutImg mr-4 mb-4" 
+                        width="200px" 
+                        height="200px"
+                    >
+                    <p>
+                        My name is Lam Nguyen. I graduated with a Bachelors in Environmental Engineering and a minor in Bioengineering. About a year or two... or three... before graduating college, I realized I didn't know anything about well...anything. 
+                    </p>
+                    <p>
+                        So after finally getting out of school, the real education began. Through various stages of life in the military, as a manufacturing engineer, organic farming startups, as an engineer in a biotech company, and doing sales in a startup health food company, I learned the hard technical skills of the economy: fighting, selling, growing food in a sustainable manner, building stuff, and creating companies from the ground up. I got my hands dirty in all forms... It was great and awful at the same time. 
+                    </p>
+                    <p>
+                        As of 2020, the world has been going through some strange and seismic shifts on alot of levels. I guess it's time to use all this knowledge and wisdom for productive purposes and for me to stop being a student... And it seems that the best way to do this is through the field of Computing, and Entrepreneurship. 
+                    </p>
+                    <p>
+                        Email: lamcnguyen89@gmail.com<br>
+                        Contact Number: 407-925-3877<br>
+                        <a href="https://github.com/lamcnguyen89" target="_blank">Visit my Github</a><br>
+                        <a href="http://www.linkedin.com/in/lamcnguyen89" target="_blank">Visit my LinkedIn Profile</a><br>
+                        <a href="https://drive.google.com/file/d/147rg_ZnJoThDnWRMXupbUYjnQk-vhjoe/view?usp=sharing" target="_blank">View my Resume</a>
+                    </p>
+                </article> 
+            </article>
+        </article>
+
+    </main>
+
+      <!-- <footer class="footer">
+        <div class="container text-center">
+          <p class="pt-3">Copyright&copy 2020, Midnight Machine LLC.</p>
+        </div>
+      </footer> -->
+
+    <!-- JS, Popper.js, and jQuery Bootstrap Reference -->
+    <script 
+        src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script 
+        src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script 
+        src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+    </script>
+
+</body>
+</html>

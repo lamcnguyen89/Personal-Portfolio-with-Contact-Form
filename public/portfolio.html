@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lam Nguyen Portfolio- Portfolio</title>
+
+    <!--CSS Bootstrap Reference-->
+    <link 
+        rel="stylesheet" 
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+        crossorigin="anonymous"
+    >
+    <!--Local Stylesheet-->
+    <link
+        rel="stylesheet"
+        type="text/css"
+        href="assets/styles/styles.css"
+    >
+</head>
+
+<body>
+
+    <!--Navigation Bar for webpage. Taken off Bootstrap-->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container headingformats">
+            <a class="navbar-brand" href="/">Lam Nguyen</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-item nav-link" href="/">About <span class="sr-only">(current)</span></a>
+                  <a class="nav-item nav-link" href="/portfolio">Portfolio</a>
+                  <a class="nav-item nav-link" href="/contact">Contact</a>
+                </div>
+              </div>
+        </div>
+    </nav>
+
+
+    <main class="container p-3 mb-5">
+         <!--* The portfolio section was arranged using the Bootstrap grid system.
+            * There are 3 rows. In the first 2 rows there are 2 columns. 
+            * In row 3 there is one column. This adds up to 5 elements.
+            * To house the images, Cards are used.
+        -->
+
+        <h1 class="headingformats">Portfolio</h1>
+        <h5>Click on the image for the website. Click on the text for the Github</h5>
+        <hr>
+       
+        <!--Row 01-->
+        <article class="row">
+        
+                <!--Row 01 Column 01-->
+                <article class= "col-sm-6 mt-3 p-3">
+                    <article class="card">
+                        <a href ="https://lamcnguyen89.github.io/Project-01--The-Electric-Art-Gallery/ " target="_blank">
+                            <img 
+                                src="assets/images/The_Electric_Art_Gallery.png"
+                                class="card-img-top img-fluid"
+                            >
+                        </a>
+                        <article class="card-body myLabel">
+                        <!--The class myLabel is used to raise the textbox within the card vertically from the bottom so that it is on top of the image.-->
+                           <a href="https://github.com/lamcnguyen89/Project-01--The-Electric-Art-Gallery" target="_blank"><h5 class="bg title">The Electric Art Gallery</h5></a> 
+                        </article>
+                    </article>
+                </article>
+                <!--End Row 01 Column 01-->
+
+                <!--Row 01 Column 02-->
+                <article class= "col-sm-6 mt-3 p-3">
+                
+                    <article class="card">
+                        <a href ="https://lamcnguyen89.github.io/Weather-Dashboard/" target="_blank">
+                            <img 
+                                src="assets/images/Weather_Dashboard.png"
+                                class="card-img-top img-fluid"    
+                            >
+                        </a>
+                        <article class="card-body myLabel">    
+                            <a href="https://github.com/lamcnguyen89/Weather-Dashboard" target="_blank"><h5 class="bg title">Personal Weather Dashboard</h5></a>
+                        </article>
+                    </article>
+                </article>
+                <!--End Row 01 Column 02-->
+
+        </article>
+        <!--End Row 01-->
+
+        <article class="row">
+        <!--Row 02-->
+
+                <!--Row 02 Column 01-->
+                <article class= "col-sm-6">
+                    <article class="card">
+                        <a href ="https://lamcnguyen89.github.io/Daily-Planner/" target="_blank">
+                            <img 
+                                src="assets/images/Daily_Planner.png"
+                                class="card-img-top img-fluid"
+                            >
+                        </a>
+                        <article class="card-body myLabel">    
+                            <a href="https://github.com/lamcnguyen89/Daily-Planner" target="_blank"><h5 class="bg title">Personal Day Planner</h5></a>
+                        </article>
+                    </article>
+                </article>
+                <!--End Row 02 Column 01-->
+
+                <!--Row 02 Column 02-->
+                <article class= "col-sm-6">
+                    <article class="card">
+                        <a href ="https://gitgudtogether.herokuapp.com/" target="_blank">
+                            <img 
+                                src="assets/images/GitGud_Together.png"
+                                class="card-img-top img-fluid"
+                            >
+                        </a>
+                        <article class="card-body myLabel">    
+                            <a href="https://github.com/lamcnguyen89/GitGud-Together.git" target="_blank"><h5 class="bg title">GitGud Together Friend Finder</h5></a>
+                        </article>
+                    </article>
+                </article>
+                <!--End Row 02 Column 02-->
+        </article>
+        <!--End Row 02-->
+
+        <!--Row 03-->
+        <article class="row">
+
+                <!--Row 03 Column 01-->
+                <article class= "col-sm-6">
+                    <article class="card">
+                        <a href ="https://drive.google.com/file/d/1ugvaW5thtiSsZuorMnHuIZ-tXupxlqLo/view" target="_blank">
+                            <img 
+                                src="assets/images/MySQL_Employee_Tracker.png"
+                                class="card-img-top img-fluid"
+                            >
+                        </a>
+                        <article class="card-body myLabel">    
+                            <a href="https://github.com/lamcnguyen89/Employee-Tracker--MySQL.git" target="_blank"><h5 class="bg title">Node/MySQL Employee Tracker</h5></a>
+                        </article>
+                    </article>
+                </article>
+                <!--End Row 03 Column 01-->
+
+                <!--Row 03 Column 02-->
+                <article class= "col-sm-6">
+                    <article class="card">
+                        <a href ="https://docs.google.com/document/d/18Nd5b1dDCaT2WmdvrvKIUbwAX4N8e-woZa1YV426SuI/edit?usp=sharing" target="_blank">
+                            <img 
+                                src="assets/images/Technical_Documentation.png"
+                                class="card-img-top img-fluid"
+                            >
+                        </a>
+                        <article class="card-body myLabel">    
+                            <a href="https://github.com/lamcnguyen89/Reverse-Engineering-Code--Sequelize.git" target="_blank"><h5 class="bg title">Technical Documentation</h5></a>
+                        </article>
+                    </article>
+                </article>
+                <!--End Row 03 Column 02-->
+
+        </article>    
+        <!--End Row 03-->
+    </main>
+
+
+    <!-- <footer class="footer">
+        <div class="container text-center">
+          <p class="pt-3">Copyright&copy 2020, Midnight Machine LLC.</p>
+        </div>
+      </footer> -->
+
+
+
+    
+    <!-- JS, Popper.js, and jQuery Bootstrap Reference -->
+    <script 
+        src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" 
+        crossorigin="anonymous">
+    </script>
+    <script 
+        src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" 
+        crossorigin="anonymous">
+    </script>
+    <script 
+        src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" 
+        crossorigin="anonymous">
+    </script>
+
+</body>
+</html>

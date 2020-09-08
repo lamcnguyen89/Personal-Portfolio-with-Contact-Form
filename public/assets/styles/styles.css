@@ -1,0 +1,52 @@
+body {
+    background-image: url("../images/Tennis.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+main, footer, nav {
+    background-color: rgba(238, 196, 11, 0.7);
+}
+
+
+footer {
+    position: fixed;
+    bottom: 0;
+    height: 60px;
+    width: 100%;
+}
+
+.aboutImg {
+    float: left;
+}
+
+.container {
+    margin-top: 20px;
+    width: 60%;
+}
+
+h1,h2,h3,h4,h5 {
+    text-align: center;
+}
+
+/*myLabel is a class used to elevate the labels for
+ the images nested in cards in portfolio.html.  */
+.myLabel{ 
+    background-color: rgba(255, 255, 255, 0.8);
+    position: absolute;
+    bottom: 25px;
+    width: 100%;
+    padding: 0px;
+}
+
+/* .card is a class used in portfolio.html */
+.card {
+    margin-top: 20px;
+    margin-bottom: 15px;
+    background-color: rgba(238, 196, 11, 0.0);
+    bottom: 10%;
+    width: 100%;
+}
+
+
+
