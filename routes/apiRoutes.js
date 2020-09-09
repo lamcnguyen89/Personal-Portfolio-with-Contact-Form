@@ -43,7 +43,7 @@ module.exports = function(app) {
         // Attempt to send the email
         smtpTrans.sendMail(mailOpts, (error, response) => {
             if (error) {
-                res.redirect('/contact') 
+                res.redirect('/error') 
             }
             else {
                 res.redirect('/thanks') 
