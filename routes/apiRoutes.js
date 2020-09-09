@@ -46,7 +46,7 @@ module.exports = function(app) {
                 res.redirect('/contact') 
             }
             else {
-                res.redirect('/contact') 
+                res.redirect('/thanks') 
             }
         });
 
