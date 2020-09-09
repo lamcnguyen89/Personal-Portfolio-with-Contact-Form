@@ -32,7 +32,7 @@ module.exports = function(app) {
 
     // GET "/error" shows the thank you page after someone submits a message on the contact form
     app.get("/error", function(req, res) {
-        res.sendFile(path.join(__dirname, "../error.html"));
+        res.sendFile(path.join(__dirname, "../public/error.html"));
     });
 
 
