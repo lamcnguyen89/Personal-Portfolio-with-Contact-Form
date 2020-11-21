@@ -1,11 +1,49 @@
 body {
-    background-image: url("../images/Tennis.jpg");
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
+    margin-bottom: 70px;
+    /* Set rules to fill background */
+    min-height: 100%;
+    min-width: 1024px;
+    /* Set up proportionate scaling */
+    width: 100%;
+    height: auto;
+    /* Set up positioning */
+    position: fixed;
+    top: 0;
+    left: 0;
+    
 }
 
+.background-about {
+    background-image: url("../images/portfolio-background_01.png");
+}
+
+
+.background-portfolio {
+    background-image: url("../images/portfolio-background_03.png");
+}
+
+.background-contact {
+    background-image: url("../images/portfolio-background_02.png");
+}
+
+.background-confirmation {
+    background-image: url("../images/portfolio-background_04.png");
+}
+
+
 main, footer, nav {
-    background-color: rgba(238, 196, 11, 0.7);
+    background-color: rgba(15, 15, 15, 0.4);
+}
+
+nav {
+    justify-content: space-around;
+    color: wheat;
+}
+
+main {
+    margin-bottom: 60px;
 }
 
 
@@ -27,6 +65,7 @@ footer {
 
 h1,h2,h3,h4,h5 {
     text-align: center;
+    color: whitesmoke;
 }
 
 /*myLabel is a class used to elevate the labels for
@@ -47,6 +86,13 @@ h1,h2,h3,h4,h5 {
     bottom: 10%;
     width: 100%;
 }
+
+@media screen and (max-width: 1024px) { /* Specific to this particular image */
+    img.bg {
+      left: 50%;
+      margin-left: -512px;   /* 50% */
+    }
+  }
 
 
 
