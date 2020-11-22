@@ -18,7 +18,7 @@ body {
 }
 
 .background-confirmation {
-    background-image: url("../images/portfolio-background_04.png");
+    background-image: url("../images/portfolio-background-04.png");
 }
 
 
@@ -26,6 +26,9 @@ main, footer, nav {
     background-color: rgba(15, 15, 15, 0.4);
 }
 
+.errorLinks a {
+    color: whitesmoke;
+}
 
 main {
     margin-bottom: 60px;
