@@ -4,6 +4,8 @@
 
 This is my work in progress portfolio for web development, programming and soon to be other accomplishments and acts. I only wish I had built this earlier in my life to document all the adventures I had from my early twenties till now.
 
+
+
 ### Prerequisites and Deployment
 
 * Installation of Web Browser to view webpage
@@ -45,3 +47,6 @@ Unlicense
 ![Portfolio image desktop sized](/public/assets/images/Portfolio_01.PNG) <br>
 ![portfolio image mobile sized](/public/assets/images/Portfolio_02.PNG)
 
+## Deployed Application
+
+View deployed application [here](https://lamnguyenportfolio.herokuapp.com/)
