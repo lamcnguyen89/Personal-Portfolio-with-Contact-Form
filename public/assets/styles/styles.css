@@ -1,90 +1,85 @@
 body {
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    margin-bottom: 70px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin-bottom: 70px;
 }
 
 .background-about {
-    background-image: url("../images/portfolio-background_01.png");
+  background-image: url("../images/portfolio-background_01.png");
 }
 
-
-.background-portfolio {
-    background-image: url("../images/portfolio-background_03.png");
+#skillsRow,
+#portfolioRow,
+#contactRow {
+  display: none;
 }
 
-.background-contact {
-    background-image: url("../images/portfolio-background_02.png");
-}
-
-.background-confirmation {
-    background-image: url("../images/portfolio-background-04.png");
-}
-
-
-main, footer, nav {
-    background-color: rgba(15, 15, 15, 0.4);
+main,
+footer,
+nav {
+  background-color: rgba(15, 15, 15, 0.4);
 }
 
 .errorLinks a {
-    color: whitesmoke;
+  color: whitesmoke;
 }
 
 main {
-    margin-bottom: 60px;
+  margin-bottom: 60px;
 }
 
-
 footer {
-    position: fixed;
-    bottom: 0;
-    height: 60px;
-    width: 100%;
+  position: fixed;
+  bottom: 0;
+  height: 60px;
+  width: 100%;
 }
 
 .aboutImg {
-    float: left;
+  float: left;
 }
 
 .container {
-    margin-top: 20px;
-    width: 60%;
+  margin-top: 20px;
+  width: 60%;
 }
 
-h1,h2,h3,h4,h5 {
-    text-align: center;
-    color: whitesmoke;
+h1,
+h2,
+h3,
+h4,
+h5 {
+  text-align: center;
+  color: whitesmoke;
 }
 
 /*myLabel is a class used to elevate the labels for
  the images nested in cards in portfolio.html.  */
-.myLabel{ 
-    background-color: rgba(15, 15, 15, 0.8);
-    position: absolute;
-    bottom: 25px;
-    width: 100%;
-    padding: 0px;
+.myLabel {
+  background-color: rgba(15, 15, 15, 0.8);
+  position: absolute;
+  bottom: 25px;
+  width: 100%;
+  padding: 0px;
 }
 
 /* .card is a class used in portfolio.html */
 .card {
-    margin-top: 20px;
-    margin-bottom: 15px;
-    background-color: rgba(238, 196, 11, 0.0);
-    bottom: 10%;
-    width: 100%;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  background-color: rgba(238, 196, 11, 0);
+  bottom: 10%;
+  width: 100%;
 }
 
 p {
-    color: whitesmoke;
+  color: whitesmoke;
 }
 
-@media screen and (max-width: 1024px) { /* Specific to this particular image */
-    img.bg {
-      left: 50%;
-      margin-left: -512px;   /* 50% */
-    }
+@media screen and (max-width: 1024px) {
+  /* Specific to this particular image */
+  img.bg {
+    left: 50%;
+    margin-left: -512px; /* 50% */
   }
-
-
-
+}

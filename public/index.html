@@ -38,11 +38,17 @@
         <!-- "my-4" is a bootstrap notation that controls the top and bottom margins for  the container."p-2" is a bootstrap notation that controls the padding for the container. Information can be found in the Bootstrap documentation under the Spacing section.
      -->
         <article class="row">
+            <article class="col-12 mt-1 p-1 text-center">
+                <a name="profile">
+                    <h1 class="headingformats mb-1">About Me</h1>
+                    <button onclick="showProfile()" class="btn-primary rounded">Hide/Show</button>
+                </a>
+            </article>
+        </article>
+        <article class="row" id="profileRow">
             <article class="col-12 mt-3 p-3">
                 <!--"mt-3" is a bootstrap notation that controls the top margin of the container. Information is found in the Bootstrap documentation under the Spacing section.-->
-                <a name="profile">
-                    <h1 class="headingformats mb-4">About Me</h1>
-                </a>
+
 
                 <img src="assets/images/Lam_Profile.jpg" alt="Profile image of man named Lam Nguyen"
                     class="aboutImg mr-4 mb-4 img-fluid rounded" width="200px" height="200px">
@@ -58,17 +64,21 @@
                         target="_blank">View my Resume</a>
                 </p>
             </article>
-
         </article>
-
     </main>
 
     <main class="container p-2 my-4">
         <article class="row">
-            <article class="col-12 mt-3 p-3">
-                <a name="Skills">
-                    <h1 class="headingformats mb-4">Skills</h1>
+            <article class="col-12 mt-1 p-1 text-center">
+                <a name="skills">
+                    <h1 class="headingformats mb-1">Skills</h1>
+                    <button onclick="showSkills()" class="btn-primary rounded">Hide/Show</button>
                 </a>
+            </article>
+        </article>
+        <article class="row" id="skillsRow">
+            <article class="col-12 mt-1 p-3">
+
                 <div class="row">
                     <div class="col">
                         <img src="./assets/images/Icons/CSS_Icon.svg" alt="CSS Icon" style="height:80%;width:80%;">
@@ -99,7 +109,9 @@
 
             </article>
         </article>
+
     </main>
+
 
     <main class="container p-2 mb-5">
         <!--* The portfolio section was arranged using the Bootstrap grid system.
@@ -107,168 +119,184 @@
             * In row 3 there is one column. This adds up to 5 elements.
             * To house the images, Cards are used.
         -->
-
-        <a name="portfolio">
-            <h1 class="headingformats">Portfolio</h1>
-        </a>
-        <h5>Click on the image for the website. Click on the text for the Github</h5>
-        <hr>
-
-        <!--Row 01-->
         <article class="row">
-
-            <!--Row 01 Column 01-->
-            <article class="col-sm-6 mt-3 p-3">
-                <article class="card">
-                    <a href="https://github.com/lamcnguyen89/The-Electric-Art-Gallery" target="_blank">
-                        <img src="assets/images/The_Electric_Art_Gallery.png" class="card-img-top img-fluid rounded">
-                    </a>
-                    <article class="card-body myLabel">
-                        <!--The class myLabel is used to raise the textbox within the card vertically from the bottom so that it is on top of the image.-->
-                        <a href="https://github.com/lamcnguyen89/Project-01--The-Electric-Art-Gallery" target="_blank">
-                            <h5 class="bg title">The Electric Art Gallery</h5>
-                        </a>
-                    </article>
-                </article>
+            <article class="col-12 mt-1 p-1 text-center">
+                <a name="portfolio">
+                    <h1 class="headingformats mb-1">Portfolio</h1>
+                    <button onclick="showPortfolio()" class="btn-primary rounded">Hide/Show</button>
+                </a>
             </article>
-            <!--End Row 01 Column 01-->
-
-            <!--Row 01 Column 02-->
-            <article class="col-sm-6 mt-3 p-3">
-
-                <article class="card">
-                    <a href=" https://back-to-the-basics.herokuapp.com/" target="_blank">
-                        <img src="assets/images/Back_To_The_Basics.png" class="card-img-top img-fluid rounded">
-                    </a>
-                    <article class="card-body myLabel">
-                        <a href="https://github.com/lamcnguyen89/Back-To-The-Basics-New" target="_blank">
-                            <h5 class="bg title">Back To The Basics</h5>
-                        </a>
-                    </article>
-                </article>
-            </article>
-            <!--End Row 01 Column 02-->
-
         </article>
-        <!--End Row 01-->
 
-        <article class="row">
-            <!--Row 02-->
+        <div id="portfolioRow">
+            <!--Row 01-->
+            <article class="row">
 
-            <!--Row 02 Column 01-->
-            <article class="col-sm-6">
-                <article class="card">
-                    <a href="https://tennis-band-in-react.herokuapp.com/" target="_blank">
-                        <img src="assets/images/Tennis_Band.png" class="card-img-top img-fluid rounded">
-                    </a>
-                    <article class="card-body myLabel">
-                        <a href="https://github.com/lamcnguyen89/Tennis_Band-React" target="_blank">
-                            <h5 class="bg title">Tennis Band Website React</h5>
+                <h5>Click on the image for the website. Click on the text for the Github</h5>
+                <hr>
+                <!--Row 01 Column 01-->
+                <article class="col-sm-6 mt-3 p-3">
+                    <article class="card">
+                        <a href="https://github.com/lamcnguyen89/The-Electric-Art-Gallery" target="_blank">
+                            <img src="assets/images/The_Electric_Art_Gallery.png"
+                                class="card-img-top img-fluid rounded">
                         </a>
+                        <article class="card-body myLabel">
+                            <!--The class myLabel is used to raise the textbox within the card vertically from the bottom so that it is on top of the image.-->
+                            <a href="https://github.com/lamcnguyen89/Project-01--The-Electric-Art-Gallery"
+                                target="_blank">
+                                <h5 class="bg title">The Electric Art Gallery</h5>
+                            </a>
+                        </article>
                     </article>
                 </article>
-            </article>
-            <!--End Row 02 Column 01-->
+                <!--End Row 01 Column 01-->
 
-            <!--Row 02 Column 02-->
-            <article class="col-sm-6">
-                <article class="card">
-                    <a href="https://gitgudtogether.herokuapp.com/" target="_blank">
-                        <img src="assets/images/GitGud_Together.png" class="card-img-top img-fluid rounded">
-                    </a>
-                    <article class="card-body myLabel">
-                        <a href="https://github.com/lamcnguyen89/GitGud-Together.git" target="_blank">
-                            <h5 class="bg title">GitGud Together Friend Finder</h5>
+                <!--Row 01 Column 02-->
+                <article class="col-sm-6 mt-3 p-3">
+
+                    <article class="card">
+                        <a href=" https://back-to-the-basics.herokuapp.com/" target="_blank">
+                            <img src="assets/images/Back_To_The_Basics.png" class="card-img-top img-fluid rounded">
                         </a>
+                        <article class="card-body myLabel">
+                            <a href="https://github.com/lamcnguyen89/Back-To-The-Basics-New" target="_blank">
+                                <h5 class="bg title">Back To The Basics</h5>
+                            </a>
+                        </article>
                     </article>
                 </article>
+                <!--End Row 01 Column 02-->
+
             </article>
-            <!--End Row 02 Column 02-->
-        </article>
-        <!--End Row 02-->
+            <!--End Row 01-->
 
-        <!--Row 03-->
-        <article class="row">
+            <article class="row">
+                <!--Row 02-->
 
-            <!--Row 03 Column 01-->
-            <article class="col-sm-6">
-                <article class="card">
-                    <a href="https://social-network-redux.herokuapp.com/" target="_blank">
-                        <img src="assets/images/Social_Media.PNG" class="card-img-top img-fluid rounded">
-                    </a>
-                    <article class="card-body myLabel">
-                        <a href="https://github.com/lamcnguyen89/Social-Media-Application-React-Redux.git"
-                            target="_blank">
-                            <h5 class="bg title">Social Media Application</h5>
+                <!--Row 02 Column 01-->
+                <article class="col-sm-6">
+                    <article class="card">
+                        <a href="https://tennis-band-in-react.herokuapp.com/" target="_blank">
+                            <img src="assets/images/Tennis_Band.png" class="card-img-top img-fluid rounded">
                         </a>
+                        <article class="card-body myLabel">
+                            <a href="https://github.com/lamcnguyen89/Tennis_Band-React" target="_blank">
+                                <h5 class="bg title">Tennis Band Website React</h5>
+                            </a>
+                        </article>
                     </article>
                 </article>
-            </article>
-            <!--End Row 03 Column 01-->
+                <!--End Row 02 Column 01-->
 
-            <!--Row 03 Column 02-->
-            <article class="col-sm-6">
-                <article class="card">
-                    <a href=" https://midnight-machine-app.herokuapp.com/" target="_blank">
-                        <img src="assets/images/Midnight_Machine.png" class="card-img-top img-fluid rounded">
-                    </a>
-                    <article class="card-body myLabel">
-                        <a href="https://github.com/lamcnguyen89/Midnight-Machine" target="_blank">
-                            <h5 class="bg title">Ecommerce/Blog React</h5>
+                <!--Row 02 Column 02-->
+                <article class="col-sm-6">
+                    <article class="card">
+                        <a href="https://gitgudtogether.herokuapp.com/" target="_blank">
+                            <img src="assets/images/GitGud_Together.png" class="card-img-top img-fluid rounded">
                         </a>
+                        <article class="card-body myLabel">
+                            <a href="https://github.com/lamcnguyen89/GitGud-Together.git" target="_blank">
+                                <h5 class="bg title">GitGud Together Friend Finder</h5>
+                            </a>
+                        </article>
                     </article>
                 </article>
+                <!--End Row 02 Column 02-->
             </article>
-            <!--End Row 03 Column 02-->
+            <!--End Row 02-->
 
-        </article>
-        <!--End Row 03-->
+            <!--Row 03-->
+            <article class="row">
+
+                <!--Row 03 Column 01-->
+                <article class="col-sm-6">
+                    <article class="card">
+                        <a href="https://social-network-redux.herokuapp.com/" target="_blank">
+                            <img src="assets/images/Social_Media.PNG" class="card-img-top img-fluid rounded">
+                        </a>
+                        <article class="card-body myLabel">
+                            <a href="https://github.com/lamcnguyen89/Social-Media-Application-React-Redux.git"
+                                target="_blank">
+                                <h5 class="bg title">Social Media Application</h5>
+                            </a>
+                        </article>
+                    </article>
+                </article>
+                <!--End Row 03 Column 01-->
+
+                <!--Row 03 Column 02-->
+                <article class="col-sm-6">
+                    <article class="card">
+                        <a href=" https://midnight-machine-app.herokuapp.com/" target="_blank">
+                            <img src="assets/images/Midnight_Machine.png" class="card-img-top img-fluid rounded">
+                        </a>
+                        <article class="card-body myLabel">
+                            <a href="https://github.com/lamcnguyen89/Midnight-Machine" target="_blank">
+                                <h5 class="bg title">Ecommerce/Blog React</h5>
+                            </a>
+                        </article>
+                    </article>
+                </article>
+                <!--End Row 03 Column 02-->
+
+            </article>
+            <!--End Row 03-->
+        </div>
     </main>
 
     <!-- This section contains the html for the contact form. 
         The formatting for this form was taken off Bootstrap. -->
     <main class="container p-2 my-4">
+        <article class="row">
+            <article class="col-12 mt-1 p-1 text-center">
+                <a name="contact">
+                    <h1 class="headingformats mb-1">Contact Me</h1>
+                    <button onclick="showContact()" class="btn-primary rounded">Hide/Show</button>
+                </a>
+            </article>
+        </article>
 
-        <a name="contact">
-            <h1 class="headingformats">Contact Me</h1>
-        </a>
-        <hr>
-        <article class="row justify-content-center">
-            <article class="col-sm-12">
-                <form action="/contact" id="contact-form" method="post" role="form">
-                    <article class="form-group">
-                        <label for="name">Name</label>
-                        <input type="text" class="form-control" id="name" name="name" required="required"
-                            placeholder="First Name and Last Name">
-                    </article>
-                    <article class="form-group">
-                        <label for="email">Email</label>
-                        <input type="text" class="form-control" id="email" name="email" required="required"
-                            placeholder="Example@gmail.com">
-                    </article>
-                    <article class="form-group">
-                        <label for="message">Message</label>
-                        <textarea class="form-control" id="message" name="message" rows="5" placeholder="Message">
+        <div id="contactRow">
+
+            <article class="row justify-content-center">
+                <article class="col-sm-12">
+                    <form action="/contact" id="contact-form" method="post" role="form">
+                        <article class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" class="form-control" id="name" name="name" required="required"
+                                placeholder="First Name and Last Name">
+                        </article>
+                        <article class="form-group">
+                            <label for="email">Email</label>
+                            <input type="text" class="form-control" id="email" name="email" required="required"
+                                placeholder="Example@gmail.com">
+                        </article>
+                        <article class="form-group">
+                            <label for="message">Message</label>
+                            <textarea class="form-control" id="message" name="message" rows="5" placeholder="Message">
                             </textarea>
-                    </article>
-                    <button type="submit" class="btn btn-primary mb-2">Submit</button>
+                        </article>
+                        <button type="submit" class="btn btn-primary mb-2">Submit</button>
 
-                </form>
+                    </form>
+                </article>
             </article>
-        </article>
 
-        <article class="row justify-content-center mt-3">
-            <article class="col-sm-12">
-                <p>
-                    My name: Lam C Nguyen<br>
-                    <a href="https://github.com/lamcnguyen89" target="_blank">Visit my Github</a><br>
-                    <a href="http://www.linkedin.com/in/lamcnguyen89" target="_blank">Visit my LinkedIn Profile</a><br>
-                    <a href="https://drive.google.com/file/d/1dpOFF6GEaoy_ANzOVAF2Z8Vp425z9-1-/view?usp=sharing"
-                        target="_blank">View my Resume</a>
+            <article class="row justify-content-center mt-3">
+                <article class="col-sm-12">
+                    <p>
+                        My name: Lam C Nguyen<br>
+                        <a href="https://github.com/lamcnguyen89" target="_blank">Visit my Github</a><br>
+                        <a href="http://www.linkedin.com/in/lamcnguyen89" target="_blank">Visit my LinkedIn
+                            Profile</a><br>
+                        <a href="https://drive.google.com/file/d/1dpOFF6GEaoy_ANzOVAF2Z8Vp425z9-1-/view?usp=sharing"
+                            target="_blank">View my Resume</a>
 
-                </p>
+                    </p>
+                </article>
             </article>
-        </article>
+        </div>
 
     </main>
 
@@ -277,7 +305,7 @@
         <p>Copyright&copy 2020, Midnight Machine LLC.</p>
     </footer>
 
-    <script src="/assets/javascript/contactForm.js"></script>
+    <script src="./assets/javascript/buttonFunctions.js"></script>
     <!-- JS, Popper.js, and jQuery Bootstrap Reference -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
